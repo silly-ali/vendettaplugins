@@ -1,5 +1,3 @@
-import { Plugin } from '@vendetta/entities';
-// @ts-ignore
 import { getModule, getByProps, MessageStore, ChannelStore } from '@vendetta/metro';
 
 type FilterOptions = {
