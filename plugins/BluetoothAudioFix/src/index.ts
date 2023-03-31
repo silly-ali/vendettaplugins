@@ -1,5 +1,3 @@
-import { Plugin } from '@vendetta/entities';
-// @ts-ignore
 import { getModule, Toasts, React, ReactNative, Dialog, Locale } from '@vendetta/metro';
 import { getAssetId } from '@vendetta/utils/getAssetId';
 import { after } from "@vendetta/utils/patcher";
