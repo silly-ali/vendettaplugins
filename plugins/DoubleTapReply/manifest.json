@@ -1,0 +1,14 @@
+{
+    "name": "Bluetooth Audio Fix",
+    "description": "Double tap to reply. A port of Martinz64's plugin for AliucordRN.",
+    "authors": [
+        {
+            "name": "eszii",
+            "id": "481819680818987008"
+        }
+    ],
+    "main": "src/index.ts",
+    "vendetta": {
+        "icon": "ic_badge_staff"
+    }
+}
