@@ -1,6 +1,6 @@
 import { getModule, Toasts, React, ReactNative, Dialog, Locale } from '@vendetta/metro';
-import { getAssetId } from '@vendetta/utils/getAssetId';
-import { after } from "@vendetta/utils/patcher";
+import { getAssetId } from '@vendetta/getAssetId';
+import { after } from "@vendetta/patcher";
 
 type FilterOptions = {
     exports?: boolean;
