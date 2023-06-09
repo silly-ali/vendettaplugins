@@ -6,8 +6,8 @@ import MoyaiSettings from "./settings";
 const {DCDSoundManager} = ReactNative.NativeModules;
 const SelectedChannelStore = findByStoreName("SelectedChannelStore");
 
-const THUD_URL =
-  "https://raw.githubusercontent.com/Metastruct/garrysmod-chatsounds/master/sound/chatsounds/autoadd/memes/overused%20thud.ogg";
+const FART_URL =
+  "https://raw.githubusercontent.com/eszgit/vendettaplugins/master/plugins/Fart/src/fart.ogg";
 const SOUND_ID = 6969;
 let SOUND_DURATION = -1;
 
@@ -41,25 +41,14 @@ function onMessage(event) {
     !event.message.state &&
     event.sendMessageOptions == undefined
   ) {
-    let count = (event.message.content.match(/🗿/g) ?? []).length;
-    count += (event.message.content.match(/<a?:.*?moy?ai.*?:.+?>/gi) ?? [])
+    let count = (event.message.content.match(/fart/g) ?? []).length;
+    count += (event.message.content.match(/fart/gi) ?? [])
       .length;
     if (count > 0) {
       for (let i = 0; i < count; i++) {
         setTimeout(playSound, i * 350);
       }
     }
-  }
-}
-
-function onReaction(event) {
-  if (
-    (storage.allowReactions ?? true) &&
-    event.channelId == SelectedChannelStore.getChannelId() &&
-    (event.emoji.name == "🗿" || event.emoji.name.match(/.*?moy?ai.*?/i)) &&
-    !event.optimistic
-  ) {
-    playSound();
   }
 }
 
@@ -80,5 +69,5 @@ export default {
     FluxDispatcher.unsubscribe("MESSAGE_CREATE", onMessage);
     FluxDispatcher.unsubscribe("MESSAGE_REACTION_ADD", onReaction);
   },
-  settings: MoyaiSettings,
+  settings: FartSettings,
 };
