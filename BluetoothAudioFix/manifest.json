@@ -1,1 +1,0 @@
-{"name":"Bluetooth Audio Fix","description":"Prevents discord from enabling handsfree mode while in a call. A port of Martinz64's plugin for AliucordRN.","authors":[{"name":"eszii","id":"481819680818987008"}],"main":"index.js","vendetta":{"icon":"ic_badge_staff"},"hash":"a352cb0707de9bd36683448898d9c57909e6327e4231ef07ed6b4abcd5cb510c"}
