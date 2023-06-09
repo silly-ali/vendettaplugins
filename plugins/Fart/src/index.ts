@@ -38,10 +38,30 @@ function onMessage(event) {
     event.message.content &&
     event.channelId == SelectedChannelStore.getChannelId() &&
     !event.message.state &&
-    event.sendMessageOptions == undefined &&
-    event.message.content.match == "fart"
-  ) 
+    event.sendMessageOptions == undefined
+
+  ) {
+
+    let count = (event.message.content.match(/fart/g) ?? []).length;
+
+    count += (event.message.content.match(/fart/gi) ?? [])
+
+      .length;
+
+    if (count > 0) {
+
+      for (let i = 0; i < count; i++) {
+
+        setTimeout(playSound, i * 350);
+
+      }
+
+    }
+
+  }
+
 }
+
 
 let soundPrepared = false;
 
