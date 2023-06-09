@@ -40,7 +40,7 @@ function onMessage(event) {
     !event.message.state &&
     event.sendMessageOptions == undefined
   ) {
-    let count += (event.message.content.match(/fart/g) ?? []).length;
+    let count = (event.message.content.match(/fart/gi) ?? []).length;
     if (count > 0) {
       for (let i = 0; i < count; i++) {
         setTimeout(playSound, i * 350);
