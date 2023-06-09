@@ -42,12 +42,7 @@ function onMessage(event) {
 
   ) {
 
-    let count = (event.message.content.match(/fart/g) ?? []).length;
-
-    count += (event.message.content.match(/fart/gi) ?? [])
-
-      .length;
-
+    let count = (event.message.content.match(/fart/gi) ?? []).length;
     if (count > 0) {
 
       for (let i = 0; i < count; i++) {
@@ -56,7 +51,7 @@ function onMessage(event) {
 
       }
 
-    }
+    } 
 
   }
 
