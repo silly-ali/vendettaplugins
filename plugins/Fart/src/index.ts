@@ -41,7 +41,7 @@ function onMessage(event) {
     event.sendMessageOptions == undefined
   ) {
     let count = (event.message.content.match(/fart/g) ?? []).length;
-    count += (event.message.content.match(/fart/gi) ?? [])
+    count += (event.message.content.match(/fard/g) ?? [])
       .length;
     if (count > 0) {
       for (let i = 0; i < count; i++) {
