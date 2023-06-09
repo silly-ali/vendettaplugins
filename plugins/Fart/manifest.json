@@ -1,0 +1,14 @@
+{
+  "name": "Fart",
+  "description": "Edited from the Moyai plugin by @cynthia, plays a fart sound every time the word "fart" is said in a message.",
+  "authors": [
+    {
+      "name": "eszii",
+      "id": "481819680818987008"
+    }
+  ],
+  "main": "src/index.ts",
+  "vendetta": {
+    "icon": "ic_speaker"
+  }
+}
