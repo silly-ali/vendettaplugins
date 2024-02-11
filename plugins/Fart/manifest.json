@@ -1,6 +1,6 @@
 {
   "name": "Fart",
-  "description": "Edited from the Moyai plugin by Cynosphere, plays a sound every time fart is said.",
+  "description": "Edited from the Moyai plugin by Cynosphere, plays a sound every time fart is said. Only works on Android.",
   "authors": [
     {
       "name": "eszii",
